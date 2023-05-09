@@ -1,0 +1,8 @@
+@import "../../../styles/default_import";
+
+.text-nowrap-md {
+	@include respond-above(sm) {
+		white-space: nowrap;
+		// border: 1px solid pink;
+	}
+}

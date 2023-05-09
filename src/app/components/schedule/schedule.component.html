@@ -1,0 +1,35 @@
+<section class="container-schedule">
+
+	<div class="container">
+
+		<div class="row justify-content-center">
+
+			<!-- <h2>{{title}}</h2> -->
+
+
+			<div class="col-12 col-xl-6">
+
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<!-- <th scope="col">#</th> -->
+							<th scope="col">Tijd</th>
+							<th scope="col">Omschrijving</th>
+							<th scope="col">Zaal</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let item of data?.schedule; let i = index">
+							<!-- <th scope="row">{{i+1}}</th> -->
+							<td class="text-wrap text-nowrap-md">{{item.start_time}} - {{item.end_time}}</td>
+							<td><strong>{{item.description}}</strong><br />{{item.speakers}}</td>
+							<td class="text-nowrap text-nowrap-md">{{item.location}}</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</section>

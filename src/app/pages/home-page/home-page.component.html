@@ -1,0 +1,97 @@
+<app-btn2top></app-btn2top>
+
+<app-hero-video-rawgenius *featureFlag="'rawgenius_2023'"></app-hero-video-rawgenius>
+
+
+<app-anchor id="about"></app-anchor>
+<section class="container container-style">
+	<app-title title="😎 RawGenius" subtitle="where the best, become genius"></app-title>
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-8">
+			<p>In dit design document wordt de opzet van een EUC (End-User Computing) conferentie gepresenteerd,
+				georganiseerd door Rawworks. Rawworks is een toonaangevend IT-bedrijf dat zich richt op innovatieve
+				oplossingen voor het moderne werken en End-User Computing. Het doel van deze conferentie is om
+				IT-professionals, eindgebruikers en andere belanghebbenden uit de branche samen te brengen en te
+				informeren over de nieuwste ontwikkelingen op het gebied van EUC. Het document geeft een overzicht van
+				de verschillende onderdelen van de conferentie, waaronder de keynote sprekers, break-out sessies,
+				workshops en netwerkmogelijkheden. Bovendien worden er richtlijnen gegeven voor de branding en marketing
+				van de conferentie, en wordt er rekening gehouden met praktische zaken zoals de locatie, de catering en
+				de logistiek. Door dit design document te volgen, kan Rawworks ervoor zorgen dat de EUC conferentie een
+				succesvol en inspirerend evenement wordt dat de deelnemers voorziet van waardevolle inzichten en netwerk
+				mogelijkheden.</p>
+		</div>
+	</div>
+</section>
+
+
+<app-anchor id="schedule"></app-anchor>
+<section class="container container-style">
+	<app-title title="🚃 Schedule" subtitle="be there or be square"></app-title>
+	<app-schedule></app-schedule>
+</section>
+
+
+<app-anchor id="zet-um-in-je-agenda"></app-anchor>
+<section class="container container-style">
+	<app-title title="📅 Agenda" subtitle="Wees erbij, claim je agenda plek!"></app-title>
+	<app-calendar-ics file="/assets/ics/rawgenius_2023.ics"></app-calendar-ics>
+</section>
+
+
+<section class="container container-style" *featureFlag="'rawgenius_2024'">
+	<app-anchor id="cta"></app-anchor>
+	<app-cta></app-cta>
+</section>
+
+
+<app-anchor id="people"></app-anchor>
+<section class="container container-style">
+	<app-title title="👽 The people"
+		subtitle="It’s their abilities, knowledge, and experience that can’t be replaced."></app-title>
+	<app-people></app-people>
+</section>
+
+<!-- <app-gallery></app-gallery> -->
+
+<app-anchor id="quote"></app-anchor>
+<app-quote quote="Code is like humor. When you have to explain it, it’s bad." writer="Cory House"></app-quote>
+
+<app-anchor id="sponsors"></app-anchor>
+<app-title title="🧽 Onze Sponsoren" subtitle="van wie we ❤️"></app-title>
+<app-sponsors></app-sponsors>
+
+<!--
+<section class="container">
+	<h2 class="display-2">Display <app-count [total]="100" dir="up" [ms]="50"></app-count> 🦊</h2>
+	<h2 class="display-3">Display <app-count [total]="100" dir="down" [ms]="50"></app-count> xxx</h2>
+	<h2>H2 - Counter test <app-count [total]="100" dir="up" [ms]="500"></app-count> hier tussen</h2>
+	<h3>H3 - Counter test <app-count [total]="1000"></app-count> hier tussen</h3>
+	<h4>H4 - Counter test <app-count [total]="10000" dir="up" [ms]="1"></app-count> hier tussen</h4>
+
+	<h2 class="display-2">Members: <app-count-trigger [total]="100" dir="up" [ms]="50"></app-count-trigger> 🥩 </h2>
+	<h2 class="display-3">Sandwiches: <app-count-trigger [total]="125" dir="up" [ms]="500"></app-count-trigger> 🥪 </h2>
+</section>
+-->
+
+
+
+<!-- <app-testimonials></app-testimonials> -->
+
+<!-- <app-anchor id="youtube"></app-anchor> -->
+<!-- <app-anchor id="lastyear"></app-anchor> -->
+<!-- <app-video-youtube></app-video-youtube> -->
+
+<app-anchor id="eventvideo"></app-anchor>
+<section class="container container-style">
+	<app-title title="🍿 Impressie RawGenius 2022" subtitle="Als je er niet was, JAMMER joh!"></app-title>
+	<app-video-vimeo [src]="'https://player.vimeo.com/video/803379240'"></app-video-vimeo>
+</section>
+
+
+<app-anchor id="contact"></app-anchor>
+<section class="container container-style mb-5" *ngIf="data && data.eventInfo">
+	<app-title title="📍 Contact/map/the place/the how" subtitle="You need to be there"></app-title>
+	<!-- <app-contact></app-contact> -->
+	<app-contact3 [data]="data.eventInfo"></app-contact3>
+
+</section>
