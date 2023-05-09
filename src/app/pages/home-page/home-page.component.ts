@@ -5,6 +5,8 @@ import { FeatureFlagsService } from 'src/app/services/feature-flags.service';
 
 import { IRoot } from 'src/app/shared/interfaces/i-root';
 
+import { environment } from 'src/environments/environment';
+
 @Component({
 	selector: 'app-home-page',
 	templateUrl: './home-page.component.html',
@@ -13,6 +15,10 @@ import { IRoot } from 'src/app/shared/interfaces/i-root';
 export class HomePageComponent implements OnInit {
 
 	data!: IRoot;
+
+	//
+	isProduction = environment.production;
+	isProductionText = environment.text;
 
 	constructor(
 		private dataService: DataService,
