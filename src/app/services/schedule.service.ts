@@ -7,7 +7,7 @@ import { IScheduleRoot } from '../shared/interfaces/i-schedule';
 })
 export class ScheduleService {
 
-	private url = '/assets/dummydata/rawgenius.json';
+	private url = 'assets/dummydata/rawgenius.json';
 
 	constructor(private http: HttpClient) { }
 

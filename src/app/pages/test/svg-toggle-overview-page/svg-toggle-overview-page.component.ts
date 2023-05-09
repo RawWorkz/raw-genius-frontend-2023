@@ -18,7 +18,7 @@ export class SvgToggleOverviewPageComponent implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-		const url = '/assets/svg/rawgenius_logo_head.min.svg';
+		const url = 'assets/svg/rawgenius_logo_head.min.svg';
 		this.http.get(url, { responseType: 'text' }).subscribe({
 			next: (data) => {
 				// console.info('::next');

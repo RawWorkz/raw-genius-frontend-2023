@@ -7,7 +7,7 @@ import { IRoot } from '../shared/interfaces/i-root';
 })
 export class DataService {
 
-	private url = 'assets/spa.json';
+	private url = 'assets/spa.json?';
 
 	constructor(private http: HttpClient) { }
 
