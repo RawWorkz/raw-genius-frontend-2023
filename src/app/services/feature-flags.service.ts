@@ -9,7 +9,7 @@ import { IFeatureFlags } from '../shared/interfaces/ifeature-flags';
 export class FeatureFlagsService {
 
 	config!: IFeatureFlags;
-	configUrl = '/assets/feature-flags.json'; // <-- URL for getting the config
+	configUrl = 'assets/feature-flags.json'; // <-- URL for getting the config
 	// configUrl = 'https://gist.githubusercontent.com/MatthijsKamstra/becdaa3dafa775eff51c31381488f91b/raw/6df721dd45fe683a4ed792f0e8d8fe8201f8806d/feature-flags.json'; // <-- URL for getting the config
 
 	constructor(private http: HttpClient) { }
