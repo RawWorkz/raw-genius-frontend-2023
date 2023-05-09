@@ -41,7 +41,6 @@ import { ColorsComponent } from './pages/styleguide/colors/colors.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { StyleguideComponent } from './pages/styleguide/styleguide.component';
-import { VideoOverviewPageComponent } from './pages/test/video-overview-page/video-overview-page.component';
 
 // misc
 import { DebugIdComponent } from './elements/debug-id/debug-id.component';
@@ -53,11 +52,9 @@ import { FullscreenLayoutComponent } from './layouts/fullscreen/fullscreen-layou
 import { AuthorisedLayoutComponent } from './layouts/authorised/authorised-layout/authorised-layout.component';
 import { HeroVideoRawGeniusComponent } from './components/hero-video-rawgenius/hero-video-rawgenius.component';
 import { StyleguideButtonsComponent } from './pages/styleguide-buttons/styleguide-buttons.component';
-import { StrapiApiOverviewPageComponent } from './pages/test/strapi-api-overview-page/strapi-api-overview-page.component';
 import { SessionsPageComponent } from './pages/sessions-page/sessions-page.component';
 import { SpeakersPageComponent } from './pages/speakers-page/speakers-page.component';
 import { CodeComponent } from './components/code/code.component';
-import { SvgToggleOverviewPageComponent } from './pages/test/svg-toggle-overview-page/svg-toggle-overview-page.component';
 import { CalendarIcsComponent } from './components/calendar-ics/calendar-ics.component';
 import { FeatureFlagDirective } from './shared/directives/feature-flag.directive';
 import { FeatureFlagsService } from './services/feature-flags.service';
@@ -105,7 +102,7 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 		TitleComponent,
 
 		VideoDefaultComponent,
-		VideoOverviewPageComponent,
+
 		VideoVimeoComponent,
 		VideoYoutubeComponent,
 		PublicLayoutComponent,
@@ -113,15 +110,13 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 		AuthorisedLayoutComponent,
 		HeroVideoRawGeniusComponent,
 		StyleguideButtonsComponent,
-		StrapiApiOverviewPageComponent,
 		SessionsPageComponent,
 		SpeakersPageComponent,
 		CodeComponent,
-		SvgToggleOverviewPageComponent,
 		CalendarIcsComponent,
 		FeatureFlagDirective,
-  Contact3Component,
-  HelloTwoComponent,
+		Contact3Component,
+		HelloTwoComponent,
 	],
 	imports: [
 		BrowserModule,
