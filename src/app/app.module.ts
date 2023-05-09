@@ -68,6 +68,8 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 
 @NgModule({
 	declarations: [
+
+		DebugDirective,
 		AboutPageComponent,
 		AddressComponent,
 		AnchorComponent,
