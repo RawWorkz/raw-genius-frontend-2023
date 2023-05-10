@@ -30,7 +30,6 @@ import { AnchorComponent } from './elements/anchor/anchor.component';
 import { Btn2topComponent } from './elements/btn2top/btn2top.component';
 import { CountComponent } from './elements/count/count.component';
 import { CountTriggerComponent } from './elements/count-trigger/count-trigger.component';
-
 import { IconsComponent } from './elements/icons/icons.component';
 import { InfoComponent } from './elements/info/info.component';
 import { SocialsComponent } from './elements/socials/socials.component';
@@ -43,24 +42,23 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { StyleguideComponent } from './pages/styleguide/styleguide.component';
 
 // misc
-import { DebugIdComponent } from './elements/debug-id/debug-id.component';
-import { SchedulesPageComponent } from './pages/schedules-page/schedules-page.component';
-import { DebugDirective } from './shared/directives/debug.directive';
-import { ScheduleSessionInfoComponent } from './elements/schedule-session-info/schedule-session-info.component';
-import { PublicLayoutComponent } from './layouts/public/public-layout/public-layout.component';
-import { FullscreenLayoutComponent } from './layouts/fullscreen/fullscreen-layout/fullscreen-layout.component';
 import { AuthorisedLayoutComponent } from './layouts/authorised/authorised-layout/authorised-layout.component';
-import { HeroVideoRawGeniusComponent } from './components/hero-video-rawgenius/hero-video-rawgenius.component';
-import { StyleguideButtonsComponent } from './pages/styleguide-buttons/styleguide-buttons.component';
-import { SessionsPageComponent } from './pages/sessions-page/sessions-page.component';
-import { SpeakersPageComponent } from './pages/speakers-page/speakers-page.component';
-import { CodeComponent } from './components/code/code.component';
 import { CalendarIcsComponent } from './components/calendar-ics/calendar-ics.component';
+import { CodeComponent } from './components/code/code.component';
+import { Contact3Component } from './components/contact3/contact3.component';
+import { DebugDirective } from './shared/directives/debug.directive';
+import { DebugIdComponent } from './elements/debug-id/debug-id.component';
 import { FeatureFlagDirective } from './shared/directives/feature-flag.directive';
 import { FeatureFlagsService } from './services/feature-flags.service';
-import { Contact3Component } from './components/contact3/contact3.component';
+import { FullscreenLayoutComponent } from './layouts/fullscreen/fullscreen-layout/fullscreen-layout.component';
 import { HelloTwoComponent } from './components/hello-two/hello-two.component';
-
+import { HeroVideoRawGeniusComponent } from './components/hero-video-rawgenius/hero-video-rawgenius.component';
+import { PublicLayoutComponent } from './layouts/public/public-layout/public-layout.component';
+import { ScheduleSessionInfoComponent } from './elements/schedule-session-info/schedule-session-info.component';
+import { SchedulesPageComponent } from './pages/schedules-page/schedules-page.component';
+import { SessionsPageComponent } from './pages/sessions-page/sessions-page.component';
+import { SpeakersPageComponent } from './pages/speakers-page/speakers-page.component';
+import { StyleguideButtonsComponent } from './pages/styleguide-buttons/styleguide-buttons.component';
 
 const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featureFlagsService.loadConfig();
 
@@ -68,24 +66,29 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 
 @NgModule({
 	declarations: [
-
-		DebugDirective,
 		AboutPageComponent,
 		AddressComponent,
 		AnchorComponent,
 		AppComponent,
+		AuthorisedLayoutComponent,
 		Btn2topComponent,
+		CalendarIcsComponent,
+		CodeComponent,
 		Col2Component,
 		ColorsComponent,
+		Contact3Component,
 		ContactComponent,
 		CountComponent,
 		CountTriggerComponent,
 		CtaComponent,
+		DebugDirective,
 		DebugIdComponent,
-
-
+		FeatureFlagDirective,
 		FooterComponent,
+		FullscreenLayoutComponent,
 		GalleryComponent,
+		HelloTwoComponent,
+		HeroVideoRawGeniusComponent,
 		HomePageComponent,
 		IconsComponent,
 		InfoComponent,
@@ -93,32 +96,22 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 		NotFoundPageComponent,
 		PeopleComponent,
 		PlaceholderComponent,
+		PublicLayoutComponent,
 		QuoteComponent,
 		ScheduleComponent,
 		ScheduleSessionInfoComponent,
 		SchedulesPageComponent,
+		SessionsPageComponent,
 		SocialsComponent,
+		SpeakersPageComponent,
 		SponsorsComponent,
+		StyleguideButtonsComponent,
 		StyleguideComponent,
 		TestimonialsComponent,
 		TitleComponent,
-
 		VideoDefaultComponent,
-
 		VideoVimeoComponent,
 		VideoYoutubeComponent,
-		PublicLayoutComponent,
-		FullscreenLayoutComponent,
-		AuthorisedLayoutComponent,
-		HeroVideoRawGeniusComponent,
-		StyleguideButtonsComponent,
-		SessionsPageComponent,
-		SpeakersPageComponent,
-		CodeComponent,
-		CalendarIcsComponent,
-		FeatureFlagDirective,
-		Contact3Component,
-		HelloTwoComponent,
 	],
 	imports: [
 		BrowserModule,
