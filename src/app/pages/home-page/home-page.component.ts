@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataService } from 'src/app/services/data.service';
 import { FeatureFlagsService } from 'src/app/services/feature-flags.service';
+import { Constants } from 'src/app/shared/config/constants';
 
 import { IRoot } from 'src/app/shared/interfaces/i-root';
 
@@ -33,6 +34,7 @@ export class HomePageComponent implements OnInit {
 		this.dataService.getData().subscribe({
 			next: data => {
 				this.data = data;
+				Constants.data = data;
 			},
 			error: error => {
 				// this.errorMessage = error.message;

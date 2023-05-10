@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { IContact } from '../interfaces/i-contact';
-import { IHero } from '../interfaces/i-root';
+import { IHero, IRoot } from '../interfaces/i-root';
 import { ISocials } from '../interfaces/i-socials';
 
 @Injectable({
@@ -12,6 +12,8 @@ export class Constants {
 
 	public readonly API_ENDPOINT: string = 'domain/api';
 	public readonly API_MOCK_ENDPOINT: string = 'mock-domain/api';
+
+	public static data: IRoot;
 
 	// default values for components
 	public static HERO: IHero = {
@@ -28,11 +30,10 @@ export class Constants {
 		}
 	};
 	public static SOCIALS: ISocials = {
-		"facebook": "https://www.facebook.com/foobar",
-		"linkedin": "https://www.linkedin.com/company/foobar",
-		"instagram": "https://www.instagram.com/foobar",
-		"twitter": "https://www.twitter.com/foobar",
-		"youtube": "https://www.youtube.com/user/foobar"
+		"facebook": "https://www.facebook.com/rawworksnlr",
+		"linkedin": "https://www.linkedin.com/company/rawworks/",
+		"twitter": "https://twitter.com/RawWorksNL",
+		"youtube": "https://www.youtube.com/channel/UCVino-GQxOPNNtnnk2PDBOg"
 	};
 	public static CONTACT: IContact = {
 		"firstname": "Matthijs",
