@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-
+import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 /**
  * https://stackoverflow.com/questions/56312457/how-to-load-and-draw-emojis-on-canvas-efficiently
@@ -12,33 +11,30 @@ import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '
 })
 export class EmojicanvasComponent implements AfterViewInit {
 
-
 	@Input() text: string = '🦄';
 	@Input() name: string = 'emoji';
+
+	size = 400; //px
 
 	// its important myCanvas matches the variable name in the template
 	@ViewChild('myCanvas')
 	canvas!: ElementRef<HTMLCanvasElement>;
 	context!: CanvasRenderingContext2D;
 
-
-
-
-	ngOnInit(): void {
-		// throw new Error('Method not implemented.');
-	}
-
 	ngAfterViewInit(): void {
 		this.context = this.canvas.nativeElement.getContext('2d') as CanvasRenderingContext2D;
+		// change dimention of the canvas
+		this.canvas.nativeElement.width = this.size * 1.5;
+		this.canvas.nativeElement.height = this.size * 1.5;
+
 		// The size of the emoji is set with the font
-		this.context.font = '100px serif';
+		this.context.font = `${this.size}px serif`;
 		// use these alignment properties for "better" positioning
 		this.context.textAlign = "center";
 		this.context.textBaseline = "middle";
 		// draw the emoji
 		this.context.fillText(this.text, this.canvas.nativeElement.width / 2, this.canvas.nativeElement.height / 2);
 	}
-
 
 	downloadCanvasAsImage() {
 		let downloadLink = document.createElement('a');
@@ -50,8 +46,6 @@ export class EmojicanvasComponent implements AfterViewInit {
 			downloadLink.click();
 		});
 	}
-
-
 
 }
 

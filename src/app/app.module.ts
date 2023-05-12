@@ -60,6 +60,7 @@ import { SessionsPageComponent } from './pages/sessions-page/sessions-page.compo
 import { SpeakersPageComponent } from './pages/speakers-page/speakers-page.component';
 import { StyleguideButtonsComponent } from './pages/styleguide-buttons/styleguide-buttons.component';
 import { EmojicanvasComponent } from './components/emojicanvas/emojicanvas.component';
+import { EmojiPageComponent } from './pages/emoji-page/emoji-page.component';
 
 const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featureFlagsService.loadConfig();
 
@@ -114,6 +115,7 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 		VideoVimeoComponent,
 		VideoYoutubeComponent,
   EmojicanvasComponent,
+  EmojiPageComponent,
 	],
 	imports: [
 		BrowserModule,
