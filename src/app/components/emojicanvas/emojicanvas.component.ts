@@ -47,6 +47,10 @@ export class EmojicanvasComponent implements AfterViewInit {
 		});
 	}
 
+	getStyle(): string {
+		return `font-size: ${this.size}px;`;
+	}
+
 }
 
 
