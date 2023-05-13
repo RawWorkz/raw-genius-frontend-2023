@@ -1,5 +1,7 @@
 // @import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
 
+@import "src/styles/abstracts/media-queries";
+
 $opacity: 0.2;
 $opacity-02: 0.2;
 $opacity-04: 0.4;
@@ -22,7 +24,10 @@ $opacity-06: 0.6;
 // }
 
 .container-quote {
-	padding: 100px;
+	padding: 1rem;
+	@include respond-above(md) {
+		padding: 6rem;
+	}
 	// background-color: black;
 
 	// font-family: "Kavoon", cursive;
