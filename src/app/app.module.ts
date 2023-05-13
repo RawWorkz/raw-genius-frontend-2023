@@ -61,6 +61,8 @@ import { SpeakersPageComponent } from './pages/speakers-page/speakers-page.compo
 import { StyleguideButtonsComponent } from './pages/styleguide-buttons/styleguide-buttons.component';
 import { EmojicanvasComponent } from './components/emojicanvas/emojicanvas.component';
 import { EmojiPageComponent } from './pages/emoji-page/emoji-page.component';
+import { CtaAlertComponent } from './components/cta-alert/cta-alert.component';
+import { CtaSpeakersComponent } from './components/cta-speakers/cta-speakers.component';
 
 const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featureFlagsService.loadConfig();
 
@@ -116,6 +118,8 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 		VideoYoutubeComponent,
   EmojicanvasComponent,
   EmojiPageComponent,
+  CtaAlertComponent,
+  CtaSpeakersComponent,
 	],
 	imports: [
 		BrowserModule,

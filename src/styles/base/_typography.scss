@@ -52,34 +52,33 @@ h5,
 h6,
 .h6 {
 	font-family: $heading-font-family;
+	line-height: 0.85;
 }
 // bebas needs some extra
 
-$fontSizeOffset: 1rem;
-
 h1,
 .h1 {
-	font-size: calc($fontSizeOffset + 1.375rem + 1.5vw);
+	font-size: calc(6rem + 1.5vw);
 }
 h2,
 .h2 {
-	font-size: calc($fontSizeOffset + 1.325rem + 0.9vw);
+	font-size: calc(5rem + 0.9vw);
 }
 h3,
 .h3 {
-	font-size: calc($fontSizeOffset + 1.3rem + 0.6vw);
+	font-size: calc(4rem + 0.6vw);
 }
 h4,
 .h4 {
-	font-size: calc($fontSizeOffset + 1.275rem + 0.3vw);
+	font-size: calc(3rem + 0.3vw);
 }
 h5,
 .h5 {
-	font-size: calc($fontSizeOffset + 1.25rem);
+	font-size: calc(2rem);
 }
 h6,
 .h6 {
-	font-size: calc($fontSizeOffset + 1rem);
+	font-size: calc(1rem);
 }
 
 .display-1,
