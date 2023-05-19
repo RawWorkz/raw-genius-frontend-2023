@@ -13,8 +13,7 @@ export class EmojicanvasComponent implements AfterViewInit {
 
 	@Input() text: string = '🦄';
 	@Input() name: string = 'emoji';
-
-	size = 400; //px
+	@Input() size: number = 400; //px
 
 	// its important myCanvas matches the variable name in the template
 	@ViewChild('myCanvas')
