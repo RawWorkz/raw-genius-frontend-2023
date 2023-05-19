@@ -7,9 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CountComponent implements OnInit {
 
-	@Input() total: number = 10;
-	@Input() dir: string = 'down';
+	// @Input() total: number = 10;
+	// @Input() dir: string = 'down';
 	@Input() ms: number = 1000;
+	//
+	@Input() from: number = 10;
+	@Input() to: number = 5;
 
 	counter: number = 0;
 	intervalId!: any;
@@ -17,14 +20,11 @@ export class CountComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit(): void {
-		if (this.dir === 'up') {
-			// count up
-			this.counter = 0;
-			this.countUp();
-		} else {
-			// count down
-			this.counter = this.total;
+		this.counter = this.from;
+		if (this.from >= this.to) {
 			this.countDown();
+		} else {
+			this.countUp();
 		}
 	}
 
@@ -34,7 +34,7 @@ export class CountComponent implements OnInit {
 
 	countDown() {
 		this.intervalId = setInterval(() => {
-			if (this.counter > 0) {
+			if (this.counter > this.to) {
 				this.counter--;
 			} else {
 				clearInterval(this.intervalId);
@@ -44,14 +44,12 @@ export class CountComponent implements OnInit {
 
 	countUp() {
 		this.intervalId = setInterval(() => {
-			if (this.counter < this.total) {
+			if (this.counter < this.to) {
 				this.counter++;
 			} else {
 				clearInterval(this.intervalId);
 			}
 		}, this.ms);
 	}
-
-
 
 }

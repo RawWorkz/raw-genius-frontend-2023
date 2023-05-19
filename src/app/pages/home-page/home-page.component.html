@@ -2,13 +2,48 @@
 
 <app-hero-video-rawgenius *featureFlag="'rawgenius_2023'"></app-hero-video-rawgenius>
 
+
+<section class="container pt-5">
+	<div class="row">
+		<div class="col">
+			<div class="alert alert-danger" role="alert">
+				<h5>Deadline registratie {{convertDate(registerDate)}}</h5>
+				Let op je hebt nog <strong><app-count [ms]="500" [from]="fromRegister" [to]="toRegister"></app-count>
+					dagen</strong> om je te registreren:
+				<div class="d-flex justify-content-end">
+					<a href="#register" class="btn btn-outline-danger "><app-icons icon="arrow-down"></app-icons>
+						Registreer</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="alert alert-danger" role="alert">
+				<h5>Deadline speakers {{convertDate(speakerDate)}}</h5>
+				Let op je hebt nog <strong><app-count [ms]="500" [from]="fromSpeaker" [to]="toSpeaker"></app-count>
+					dagen</strong> om lezing in te geven:
+				<div class="d-flex justify-content-end">
+					<a href="#speakers" class="btn btn-outline-danger"><app-icons icon="arrow-down"></app-icons>
+						Speakers</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
 <section debug>
 	<ul class="mb-0">
 		<li><code>environment.production: {{this.isProduction}}</code></li>
 		<li><code>environment.text: {{this.isProductionText}}</code></li>
-		<li><code>countdown to deadline: <app-count></app-count></code></li>
+		<li><code>countdown register {{convertDate(registerDate)}}: {{toRegister}} <app-count [ms]="500" [from]="fromRegister" [to]="toRegister"></app-count></code>
+		</li>
+		<li><code>countdown speaker {{convertDate(speakerDate)}}: {{toSpeaker}} <app-count [ms]="500" [from]="fromSpeaker" [to]="toSpeaker"></app-count></code>
+		</li>
 	</ul>
 </section>
+
+
 
 <app-anchor id="about"></app-anchor>
 <section class="container container-style">
