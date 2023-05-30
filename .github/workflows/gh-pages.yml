@@ -26,14 +26,14 @@ jobs:
       - name: Build
         run: npm run build:prod
 
-      #   - name: Create 404
-      #     run: cp dist/raw-genius-frontend-2023/index.html dist/raw-genius-frontend-2023/404.html
+      - name: Create 404
+        run: cp dist/raw-genius-frontend-2023/index.html dist/raw-genius-frontend-2023/404.html
 
-      #   - name: Delete index
-      #     run: rm dist/raw-genius-frontend-2023/index.html
+      - name: Delete index
+        run: rm dist/raw-genius-frontend-2023/index.html
 
-      #   - name: Use https index
-      #     run: mv dist/raw-genius-frontend-2023/index_https.html dist/raw-genius-frontend-2023/index.html
+      - name: Use https index
+        run: mv dist/raw-genius-frontend-2023/index_https.html dist/raw-genius-frontend-2023/index.html
 
       - name: Deploy
         if: success()
