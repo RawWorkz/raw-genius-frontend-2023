@@ -2,33 +2,35 @@
 
 <app-hero-video-rawgenius *featureFlag="'rawgenius_2023'"></app-hero-video-rawgenius>
 
+<!--
 
-<section class="container pt-5">
-	<div class="row">
-		<div class="col-12 col-md-6">
-			<div class="alert alert-danger text-center" role="alert">
+	<section class="container pt-5">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="alert alert-danger text-center" role="alert">
 				<h5>Deadline registratie {{convertDate(registerDate)}}</h5>
 				Let op je hebt nog <strong><app-count [ms]="500" [from]="fromRegister" [to]="toRegister"></app-count>
 					dagen</strong> om je te registreren:
-				<div class="d-flex justify-content-center mt-2">
-					<a href="#register" class="btn btn-outline-danger "><app-icons icon="arrow-down"></app-icons>
-						Registreer</a>
+					<div class="d-flex justify-content-center mt-2">
+						<a href="#register" class="btn btn-outline-danger "><app-icons icon="arrow-down"></app-icons>
+							Registreer</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="col-12 col-md-6">
-			<div class="alert alert-danger text-center" role="alert">
-				<h5>Deadline speakers {{convertDate(speakerDate)}}</h5>
-				Let op je hebt nog <strong><app-count [ms]="500" [from]="fromSpeaker" [to]="toSpeaker"></app-count>
-					dagen</strong> om lezing in te geven:
-				<div class="d-flex justify-content-center mt-2">
-					<a href="#speakers" class="btn btn-outline-danger"><app-icons icon="arrow-down"></app-icons>
-						Speakers</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+				<div class="col-12 col-md-6">
+					<div class="alert alert-danger text-center" role="alert">
+						<h5>Deadline speakers {{convertDate(speakerDate)}}</h5>
+						Let op je hebt nog <strong><app-count [ms]="500" [from]="fromSpeaker" [to]="toSpeaker"></app-count>
+							dagen</strong> om lezing in te geven:
+							<div class="d-flex justify-content-center mt-2">
+								<a href="#speakers" class="btn btn-outline-danger"><app-icons icon="arrow-down"></app-icons>
+									Speakers</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+-->
 
 
 

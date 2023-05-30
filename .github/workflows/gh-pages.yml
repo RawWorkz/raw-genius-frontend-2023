@@ -26,6 +26,9 @@ jobs:
       - name: Build
         run: npm run build:prod
 
+      - name: Create 404
+        run: cp dist/raw-genius-frontend-2023/index.html dist/raw-genius-frontend-2023/404.html
+
       - name: Deploy
         if: success()
         uses: peaceiris/actions-gh-pages@v3
