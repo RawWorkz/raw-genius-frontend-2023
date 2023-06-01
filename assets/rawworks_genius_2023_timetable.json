@@ -1,0 +1,275 @@
+{
+  "start_date": "",
+  "end_date": "",
+  "description": "RawWorks",
+  "description2": "Timetable RawGenius 2023",
+  "schedule": [
+    {
+      "_id": "inloop",
+      "start_time": "12:30",
+      "end_time": "13:00",
+      "type": "",
+      "tag": [""],
+      "description": "Inloop",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "kickoff",
+      "start_time": "13:00",
+      "end_time": "13:15",
+      "type": "",
+      "tag": [""],
+      "description": "Kick Off",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "keynote",
+      "start_time": "13:15",
+      "end_time": "14:00",
+      "type": "",
+      "tag": [""],
+      "description": "Keynote",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "microsoft",
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "type": "sponsor",
+      "tag": [""],
+      "description": "Sessie Microsoft",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "gvb",
+      "start_time": "14:30",
+      "end_time": "15:00",
+      "type": "sponsor",
+      "tag": [""],
+      "description": "Sessie GVB",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "",
+      "start_time": "15:00",
+      "end_time": "15:30",
+      "type": "pause",
+      "tag": [""],
+      "description": "Pauze",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "sessie_01",
+      "start_time": "15:30",
+      "end_time": "15:50",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 1",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "sessie_02",
+      "start_time": "15:30",
+      "end_time": "15:50",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 2",
+      "speakers": "",
+      "location": "Zaal 2"
+    },
+    {
+      "_id": "",
+      "start_time": "15:50",
+      "end_time": "16:00",
+      "type": "switch",
+      "tag": [""],
+      "description": "Wissel",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "sessie_03",
+      "start_time": "16:00",
+      "end_time": "16:20",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 3",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "sessie_04",
+      "start_time": "16:00",
+      "end_time": "16:20",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 4",
+      "speakers": "",
+      "location": "Zaal 2"
+    },
+    {
+      "_id": "",
+      "start_time": "16:20",
+      "end_time": "16:30",
+      "type": "switch",
+      "tag": [""],
+      "description": "Wissel",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "sessie_05",
+      "start_time": "16:30",
+      "end_time": "16:50",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 5",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "sessie_06",
+      "start_time": "16:30",
+      "end_time": "16:50",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 6",
+      "speakers": "",
+      "location": "Zaal 2"
+    },
+    {
+      "_id": "",
+      "start_time": "16:50",
+      "end_time": "17:00",
+      "type": "switch",
+      "tag": [""],
+      "description": "Wissel",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "sessie_07",
+      "start_time": "17:00",
+      "end_time": "17:20",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 7",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "sessie_08",
+      "start_time": "17:00",
+      "end_time": "17:20",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 8",
+      "speakers": "",
+      "location": "Zaal 2"
+    },
+    {
+      "_id": "",
+      "start_time": "17:20",
+      "end_time": "17:30",
+      "type": "switch",
+      "tag": [""],
+      "description": "Wissel",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "sessie_09",
+      "start_time": "17:30",
+      "end_time": "17:50",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 9",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "sessie_10",
+      "start_time": "17:30",
+      "end_time": "17:50",
+      "type": "",
+      "tag": [""],
+      "description": "Sessie 10",
+      "speakers": "",
+      "location": "Zaal 2"
+    },
+    {
+      "_id": "",
+      "start_time": "17:50",
+      "end_time": "17:55",
+      "type": "switch",
+      "tag": [""],
+      "description": "Wissel",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "17:55",
+      "end_time": "18:00",
+      "type": "",
+      "tag": [""],
+      "description": "Afsluiten",
+      "speakers": "",
+      "location": "Zaal 1"
+    },
+    {
+      "_id": "",
+      "start_time": "18:00",
+      "end_time": "18:15",
+      "type": "switch",
+      "tag": [""],
+      "description": "Wissel",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "18:15",
+      "end_time": "19:15",
+      "type": "",
+      "tag": [""],
+      "description": "Bowlen",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "19:15",
+      "end_time": "21:15",
+      "type": "",
+      "tag": [""],
+      "description": "Diner",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "21:15",
+      "end_time": "01:00",
+      "type": "",
+      "tag": [""],
+      "description": "Feestavond",
+      "speakers": "",
+      "location": ""
+    }
+  ],
+  "sessions": [
+    {
+      "_id": "sessie_01",
+      "description": "Sessie 1",
+      "speakers": "UNKNOWN"
+    }
+  ]
+}
