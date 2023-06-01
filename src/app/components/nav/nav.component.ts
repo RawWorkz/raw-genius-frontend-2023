@@ -41,9 +41,7 @@ export class NavComponent implements OnInit {
 				this.isRoot = this.router.url === '' || this.router.url === '/';
 			}
 		});
-
 		// console.log(anchorRoutes);
-
 	}
 
 	ngOnDestroy(): void {

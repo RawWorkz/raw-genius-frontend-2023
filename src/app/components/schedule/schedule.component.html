@@ -16,14 +16,17 @@
 							<th scope="col">Tijd</th>
 							<th scope="col">Omschrijving</th>
 							<th scope="col">Zaal</th>
+							<!-- <th scope="col"></th> -->
 						</tr>
 					</thead>
 					<tbody>
-						<tr *ngFor="let item of data?.schedule; let i = index">
+						<tr *ngFor="let item of data?.schedule; let i = index" [ngClass]="'table-tr-' + item.type">
 							<!-- <th scope="row">{{i+1}}</th> -->
 							<td class="text-wrap text-nowrap-md">{{item.start_time}} - {{item.end_time}}</td>
-							<td><strong>{{item.description}}</strong><br />{{item.speakers}}</td>
+							<!-- <td><strong>{{item.description}}</strong><br />{{item.speakers}}</td> -->
+							<td><strong>{{getDescription(item)}}</strong><br />{{getSpeaker(item)}}</td>
 							<td class="text-nowrap text-nowrap-md">{{item.location}}</td>
+							<!-- <td class="text-nowrap text-nowrap-md">{{item.type}}</td> -->
 						</tr>
 
 					</tbody>

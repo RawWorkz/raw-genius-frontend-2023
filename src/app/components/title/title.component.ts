@@ -41,6 +41,16 @@ export class TitleComponent implements OnInit {
 			this.title = this.title.replace('🍿', '');
 			this.url = '/assets/images/emoji/emoji_popcorn.png';
 		}
+		if (this.title.indexOf('📍') != -1) {
+			// console.log('>> emoji_speaker');
+			this.title = this.title.replace('📍', '');
+			this.url = '/assets/images/emoji/emoji_pin.png';
+		}
+		if (this.title.indexOf('🚃') != -1) {
+			// console.log('>> emoji_speaker');
+			this.title = this.title.replace('🚃', '');
+			this.url = '/assets/images/emoji/emoji_schedule.png';
+		}
 
 		// this.url = '/assets/images/emoji/emoji_alert.png';
 		// src/assets/images/emoji/emoji_calendar.png

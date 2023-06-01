@@ -7,7 +7,7 @@ import { Timeline } from '../shared/models/data';
 })
 export class TimelineService {
 
-	private url = 'assets/rawworks_genius_2022_timetable.json';
+	private url = 'assets/rawworks_genius_2023_timetable.json';
 
 	constructor(private http: HttpClient) { }
 

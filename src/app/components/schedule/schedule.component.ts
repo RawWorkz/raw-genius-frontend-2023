@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Timeline } from 'src/app/shared/models/data';
+import { Schedule, Timeline } from 'src/app/shared/models/data';
 import { TimelineService } from 'src/app/services/timeline.service';
 
 @Component({
@@ -14,7 +14,9 @@ export class ScheduleComponent implements OnInit {
 	data!: Timeline;
 	errorMessage: string = '';
 
-	constructor(private timelineService: TimelineService) { }
+	constructor(
+		private timelineService: TimelineService
+	) { }
 
 	ngOnInit(): void {
 		this.getData();
@@ -31,6 +33,36 @@ export class ScheduleComponent implements OnInit {
 				console.error('There was an error!', error);
 			}
 		});
+	}
+
+	getDescription(schedule: Schedule) {
+		let str = schedule.description;
+		if (this.data) {
+			if (schedule._id != '') {
+				for (let i = 0; i < this.data.sessions.length; i++) {
+					const session = this.data.sessions[i];
+					if (schedule._id == session._id) {
+						str = session.description;
+					}
+				}
+			}
+		}
+		return str;
+	}
+
+	getSpeaker(schedule: Schedule) {
+		let str = schedule.speakers;
+		if (this.data) {
+			if (schedule._id != '') {
+				for (let i = 0; i < this.data.sessions.length; i++) {
+					const session = this.data.sessions[i];
+					if (schedule._id == session._id) {
+						str = session.speakers;
+					}
+				}
+			}
+		}
+		return str;
 	}
 
 }
