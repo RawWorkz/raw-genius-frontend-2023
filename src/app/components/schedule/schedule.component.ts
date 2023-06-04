@@ -38,34 +38,34 @@ export class ScheduleComponent implements OnInit {
 		});
 	}
 
-	getDescription(schedule: IISchedule) {
-		let str = schedule.description;
-		if (this.data) {
-			if (schedule._id != '') {
-				for (let i = 0; i < this.data.sessions.length; i++) {
-					const session = this.data.sessions[i];
-					if (schedule._id == session._id) {
-						str = session.description;
-					}
-				}
-			}
-		}
-		return str;
-	}
+	// getDescription(schedule: IISchedule) {
+	// 	let str = schedule.description;
+	// 	if (this.data) {
+	// 		if (schedule._id != '') {
+	// 			for (let i = 0; i < this.data.sessions.length; i++) {
+	// 				const session = this.data.sessions[i];
+	// 				if (schedule._id == session._id) {
+	// 					str = session.description;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	return str;
+	// }
 
-	getSpeaker(schedule: IISchedule) {
-		let str = schedule.speakers;
-		if (this.data) {
-			if (schedule._id != '') {
-				for (let i = 0; i < this.data.sessions.length; i++) {
-					const session = this.data.sessions[i];
-					if (schedule._id == session._id) {
-						str = session.speakers;
-					}
-				}
-			}
-		}
-		return str;
-	}
+	// getSpeaker(schedule: IISchedule) {
+	// 	let str = schedule.speakers;
+	// 	if (this.data) {
+	// 		if (schedule._id != '') {
+	// 			for (let i = 0; i < this.data.sessions.length; i++) {
+	// 				const session = this.data.sessions[i];
+	// 				if (schedule._id == session._id) {
+	// 					str = session.speakers;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	return str;
+	// }
 
 }

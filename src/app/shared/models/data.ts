@@ -4,7 +4,7 @@ export interface IITimeline {
 	description: string;
 	description2: string;
 	schedule: IISchedule[];
-	sessions: IISession[];
+	// sessions: IISession[];
 }
 
 export interface IISchedule {

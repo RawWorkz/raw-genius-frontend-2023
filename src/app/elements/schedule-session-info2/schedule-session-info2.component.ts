@@ -36,6 +36,7 @@ export class ScheduleSessionInfo2Component {
 					obj.color = 'text-bg-secondary';
 					break;
 				case 'tutorial':
+				case 'rawfit':
 					// console.log("Tutorial");
 					obj.color = 'text-bg-success';
 					break;
