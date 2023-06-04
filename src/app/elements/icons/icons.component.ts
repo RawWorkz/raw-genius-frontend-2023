@@ -112,6 +112,7 @@ export class IconsComponent implements OnInit {
 			case 'schedule': this.icon = 'fa-sliders'; break;
 			case 'arrow-down': this.icon = 'fa-arrow-down'; break;
 			case 'arrow-left': this.icon = 'fa-arrow-left'; break;
+			case 'arrow-up': this.icon = 'fa-arrow-up'; break;
 
 
 

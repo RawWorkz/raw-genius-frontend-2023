@@ -13,6 +13,7 @@ export const anchorRoutes: AnchorRoutes[] = [
 	// { id: "cta", title: "CTA" },
 	// { id: "quote", title: "Quote" },
 	// { id: "sponsors", title: "Sponsors" },
+	{ id: "zet-um-in-je-agenda", title: "Agenda" },
 	{ id: "eventvideo", title: "RawGenius 2022" },
 	{ id: "location", title: "Location" },
 ];
