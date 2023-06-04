@@ -8,7 +8,7 @@
       "_id": "inloop",
       "start_time": "12:30",
       "end_time": "13:00",
-      "type": "",
+      "type": "inloop",
       "tag": [""],
       "description": "Inloop",
       "speakers": "",
@@ -248,7 +248,7 @@
       "_id": "",
       "start_time": "19:15",
       "end_time": "21:15",
-      "type": "",
+      "type": "diner",
       "tag": ["food"],
       "description": "Famous Braaimaster",
       "speakers": "Eten van de Zuid-Afrikaanse braai",
@@ -258,71 +258,9 @@
       "_id": "",
       "start_time": "21:15",
       "end_time": "01:00",
-      "type": "",
+      "type": "party",
       "tag": [""],
       "description": "Feest avond + Feest DJ",
-      "speakers": "",
-      "location": ""
-    }
-  ],
-  "day": [
-    {
-      "_id": "",
-      "start_time": "01:00",
-      "end_time": "08:00",
-      "type": "",
-      "tag": [""],
-      "description": "Overnachting @ Courtyard by Marriott hotel",
-      "speakers": "",
-      "location": ""
-    },
-    {
-      "_id": "",
-      "start_time": "08:00",
-      "end_time": "09:00",
-      "type": "",
-      "tag": [""],
-      "description": "Bootcamp",
-      "speakers": "Jan-Paul Plaisier",
-      "location": ""
-    },
-    {
-      "_id": "",
-      "start_time": "09:00",
-      "end_time": "10:00",
-      "type": "",
-      "tag": [""],
-      "description": "Ontbijt",
-      "speakers": "",
-      "location": ""
-    },
-    {
-      "_id": "",
-      "start_time": "10:30",
-      "end_time": "12:30",
-      "type": "",
-      "tag": [""],
-      "description": "Teambuilding",
-      "speakers": "",
-      "location": ""
-    },
-    {
-      "_id": "",
-      "start_time": "12:30",
-      "end_time": "13:30",
-      "type": "",
-      "tag": [""],
-      "description": "Lunch",
-      "speakers": "",
-      "location": ""
-    },
-    {
-      "_id": "",
-      "start_time": "13:30",
-      "end_time": "-",
-      "type": "",
-      "tag": [""],
-      "description": "Einde",
       "speakers": "",
       "location": ""
     }
