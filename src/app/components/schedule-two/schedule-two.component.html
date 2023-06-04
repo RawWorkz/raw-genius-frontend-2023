@@ -1,0 +1,30 @@
+<section class="container-schedule">
+	<div class="container">
+		<div class="row justify-content-center">
+			<h4>{{this.title}}</h4>
+			<!-- <h5>{{this.url}}</h5> -->
+			<div class="col-12 col-xl-6">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">Tijd</th>
+							<th scope="col">Omschrijving</th>
+							<th scope="col">Zaal</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let shed of data?.schedule; let i = index" [ngClass]="'table-tr-' + shed.type">
+							<td class="text-nowrap _text-wrap _text-nowrap-md">
+								{{shed.start_time}} - {{shed.end_time}}
+							</td>
+							<td>
+								<app-schedule-session-info2 [schedule]="shed"></app-schedule-session-info2>
+							</td>
+							<td class="text-nowrap _text-nowrap-md">{{shed.location}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>

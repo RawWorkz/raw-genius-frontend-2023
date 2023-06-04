@@ -66,6 +66,7 @@ import { CtaSpeakersComponent } from './components/cta-speakers/cta-speakers.com
 import { ScheduleSessionInfo2Component } from './elements/schedule-session-info2/schedule-session-info2.component';
 import { LocationEventComponent } from './components/location-event/location-event.component';
 import { LocationSleepComponent } from './components/location-sleep/location-sleep.component';
+import { ScheduleTwoComponent } from './components/schedule-two/schedule-two.component';
 
 const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featureFlagsService.loadConfig();
 
@@ -126,6 +127,7 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
   ScheduleSessionInfo2Component,
   LocationEventComponent,
   LocationSleepComponent,
+  ScheduleTwoComponent,
 	],
 	imports: [
 		BrowserModule,
