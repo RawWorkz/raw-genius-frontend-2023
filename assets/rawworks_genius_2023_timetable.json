@@ -69,7 +69,7 @@
       "start_time": "15:30",
       "end_time": "15:50",
       "type": "",
-      "tag": [""],
+      "tag": ["cloud"],
       "description": "Sessie 1",
       "speakers": "Mark Bonefaas & Gerjon Kunst",
       "location": "Zaal 1"
@@ -99,7 +99,7 @@
       "start_time": "16:00",
       "end_time": "16:20",
       "type": "",
-      "tag": [""],
+      "tag": ["cloud"],
       "description": "Sessie 3",
       "speakers": "Roeland van den Bosch",
       "location": "Zaal 1"
@@ -109,7 +109,7 @@
       "start_time": "16:00",
       "end_time": "16:20",
       "type": "",
-      "tag": [""],
+      "tag": ["digital"],
       "description": "Sessie 4",
       "speakers": "Matthijs Kamstra",
       "location": "Zaal 2"
@@ -129,7 +129,7 @@
       "start_time": "16:30",
       "end_time": "16:50",
       "type": "",
-      "tag": [""],
+      "tag": ["digital", "cloud"],
       "description": "Sessie 5",
       "speakers": "Maurice Diekhorst & Negin Nafassi",
       "location": "Zaal 1"
@@ -159,7 +159,7 @@
       "start_time": "17:00",
       "end_time": "17:20",
       "type": "",
-      "tag": [""],
+      "tag": ["digital", "data"],
       "description": "Sessie 7",
       "speakers": "Olivier van den Eertwegh",
       "location": "Zaal 1"
@@ -169,7 +169,7 @@
       "start_time": "17:00",
       "end_time": "17:20",
       "type": "",
-      "tag": [""],
+      "tag": ["workspace"],
       "description": "Sessie 8",
       "speakers": "Erwin Gerlich & Tristan Remkes",
       "location": "Zaal 2"
@@ -199,7 +199,7 @@
       "start_time": "17:30",
       "end_time": "17:50",
       "type": "",
-      "tag": [""],
+      "tag": ["cloud"],
       "description": "Sessie 10",
       "speakers": "Jeroen Buren",
       "location": "Zaal 2"
@@ -372,7 +372,7 @@
     {
       "_id": "sessie_09",
       "speakers": "Edwin ten Haaf",
-      "description": "CLAAS - Client as a service  "
+      "description": "CLAAS - Client as a service"
     },
     {
       "_id": "sessie_10",
