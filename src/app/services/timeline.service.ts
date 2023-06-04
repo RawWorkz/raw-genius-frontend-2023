@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Timeline } from '../shared/models/data';
+import { IITimeline } from '../shared/models/data';
 
 @Injectable({
 	providedIn: 'root'
@@ -12,6 +12,6 @@ export class TimelineService {
 	constructor(private http: HttpClient) { }
 
 	getData() {
-		return this.http.get<Timeline>(this.url);
+		return this.http.get<IITimeline>(this.url);
 	}
 }

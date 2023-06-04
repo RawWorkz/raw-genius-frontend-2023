@@ -1,0 +1,8 @@
+<div *ngIf="schedule">
+	<!-- {{schedule|json}} -->
+	<p class="mb-0">
+		<strong>{{ schedule.description }}</strong>
+		{{ schedule.speakers }}
+	</p>
+	<span *ngFor="let tag of tags" class="badge me-1" ngClass="{{tag.color}}">{{tag.title}}</span>
+</div>

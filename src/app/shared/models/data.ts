@@ -1,13 +1,13 @@
-export interface Timeline {
+export interface IITimeline {
 	start_date: string;
 	end_date: string;
 	description: string;
 	description2: string;
-	schedule: Schedule[];
-	sessions: Session[];
+	schedule: IISchedule[];
+	sessions: IISession[];
 }
 
-export interface Schedule {
+export interface IISchedule {
 	_id: string;
 	start_time: string;
 	end_time: string;
@@ -18,7 +18,7 @@ export interface Schedule {
 	location?: string;
 }
 
-export interface Session {
+export interface IISession {
 	_id: string;
 	description: string;
 	speakers: string;

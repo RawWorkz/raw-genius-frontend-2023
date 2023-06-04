@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Schedule, Timeline } from 'src/app/shared/models/data';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { IISchedule, IITimeline } from 'src/app/shared/models/data';
 import { TimelineService } from 'src/app/services/timeline.service';
 
 @Component({
@@ -11,8 +11,10 @@ export class ScheduleComponent implements OnInit {
 
 	title = 'RawWorks ScheduleComponent';
 
-	data!: Timeline;
+	data!: IITimeline;
 	errorMessage: string = '';
+
+	tags: { title: string, color: string }[] = [];
 
 	constructor(
 		private timelineService: TimelineService
@@ -21,6 +23,7 @@ export class ScheduleComponent implements OnInit {
 	ngOnInit(): void {
 		this.getData();
 	}
+
 
 	getData() {
 		this.timelineService.getData().subscribe({
@@ -35,7 +38,7 @@ export class ScheduleComponent implements OnInit {
 		});
 	}
 
-	getDescription(schedule: Schedule) {
+	getDescription(schedule: IISchedule) {
 		let str = schedule.description;
 		if (this.data) {
 			if (schedule._id != '') {
@@ -50,7 +53,7 @@ export class ScheduleComponent implements OnInit {
 		return str;
 	}
 
-	getSpeaker(schedule: Schedule) {
+	getSpeaker(schedule: IISchedule) {
 		let str = schedule.speakers;
 		if (this.data) {
 			if (schedule._id != '') {

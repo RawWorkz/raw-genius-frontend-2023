@@ -63,6 +63,7 @@ import { EmojicanvasComponent } from './components/emojicanvas/emojicanvas.compo
 import { EmojiPageComponent } from './pages/emoji-page/emoji-page.component';
 import { CtaAlertComponent } from './components/cta-alert/cta-alert.component';
 import { CtaSpeakersComponent } from './components/cta-speakers/cta-speakers.component';
+import { ScheduleSessionInfo2Component } from './elements/schedule-session-info2/schedule-session-info2.component';
 
 const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featureFlagsService.loadConfig();
 
@@ -120,6 +121,7 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
   EmojiPageComponent,
   CtaAlertComponent,
   CtaSpeakersComponent,
+  ScheduleSessionInfo2Component,
 	],
 	imports: [
 		BrowserModule,
