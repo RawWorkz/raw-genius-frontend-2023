@@ -36,11 +36,20 @@
 
 <section debug>
 	<ul class="mb-0">
-		<li><code>environment.production: {{this.isProduction}}</code></li>
-		<li><code>environment.text: {{this.isProductionText}}</code></li>
-		<li><code>countdown register {{convertDate(registerDate)}}: {{toRegister}} <app-count [ms]="500" [from]="fromRegister" [to]="toRegister"></app-count></code>
+		<li>
+			<code>environment.production: {{this.isProduction}}</code>
 		</li>
-		<li><code>countdown speaker {{convertDate(speakerDate)}}: {{toSpeaker}} <app-count [ms]="500" [from]="fromSpeaker" [to]="toSpeaker"></app-count></code>
+		<li>
+			<code>environment.text: {{this.isProductionText}}</code>
+		</li>
+		<li>
+			<code>countdown register {{convertDate(registerDate)}}: {{toRegister}} <app-count [ms]="500" [from]="fromRegister" [to]="toRegister"></app-count></code>
+		</li>
+		<li>
+			<code>countdown speaker {{convertDate(speakerDate)}}: {{toSpeaker}} <app-count [ms]="500" [from]="fromSpeaker" [to]="toSpeaker"></app-count></code>
+		</li>
+		<li>
+			<code>countdown event {{convertDate(eventDate)}}: {{toEvent}} <app-count [ms]="500" [from]="fromEvent" [to]="toEvent"></app-count></code>
 		</li>
 	</ul>
 </section>

@@ -19,12 +19,15 @@ export class HomePageComponent implements OnInit {
 
 	speakerDate = new Date(2023, 4, 26);
 	registerDate = new Date(2023, 4, 28);
+	eventDate = new Date(2023, 5, 23);
 	currentDate = new Date();
 
 	fromRegister = 10;
 	toRegister = 10;
 	fromSpeaker = 10;
 	toSpeaker = 10;
+	fromEvent = 10;
+	toEvent = 10;
 
 	//
 	isProduction = environment.production;
@@ -47,14 +50,22 @@ export class HomePageComponent implements OnInit {
 		// To calculate the no. of days between two dates
 		var difInDaysRegister = difInTimeRegister / (1000 * 3600 * 24);
 
+		// To calculate the time difference of two dates
+		var difInTimeEvent = this.eventDate.getTime() - this.currentDate.getTime();
+		// To calculate the no. of days between two dates
+		var difInDaysEvent = difInTimeEvent / (1000 * 3600 * 24);
+
 		console.log(difInDaysSpeaker);
 		console.log(difInDaysRegister);
+		console.log(difInDaysEvent);
 
 
 		this.fromRegister = Math.floor(difInDaysRegister) + 7;
 		this.toRegister = Math.floor(difInDaysRegister);
 		this.fromSpeaker = Math.floor(difInDaysSpeaker) + 7;
 		this.toSpeaker = Math.floor(difInDaysSpeaker);
+		this.fromEvent = Math.floor(difInDaysEvent) + 7;
+		this.toEvent = Math.floor(difInDaysEvent);
 
 		// this.fromRegister = 16;
 		// this.toRegister = 11;
