@@ -1,6 +1,6 @@
 {
-  "start_date": "",
-  "end_date": "",
+  "start_date": "23-06-2023",
+  "end_date": "24-06-2023",
   "description": "RawWorks",
   "description2": "Timetable RawGenius 2023",
   "schedule": [
@@ -20,8 +20,8 @@
       "end_time": "13:15",
       "type": "",
       "tag": [""],
-      "description": "Kick Off",
-      "speakers": "",
+      "description": "Kick Off RawGenius",
+      "speakers": "Martijn",
       "location": "Zaal 1"
     },
     {
@@ -31,7 +31,7 @@
       "type": "",
       "tag": [""],
       "description": "Keynote",
-      "speakers": "",
+      "speakers": "Jan",
       "location": "Zaal 1"
     },
     {
@@ -40,8 +40,8 @@
       "end_time": "14:30",
       "type": "sponsor",
       "tag": [""],
-      "description": "Sessie Microsoft",
-      "speakers": "",
+      "description": "Microsoft",
+      "speakers": "Olivier",
       "location": "Zaal 1"
     },
     {
@@ -50,8 +50,8 @@
       "end_time": "15:00",
       "type": "sponsor",
       "tag": [""],
-      "description": "Sessie GVB",
-      "speakers": "",
+      "description": "GVB",
+      "speakers": "Onbekend",
       "location": "Zaal 1"
     },
     {
@@ -71,7 +71,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 1",
-      "speakers": "",
+      "speakers": "Mark Bonefaas & Gerjon Kunst",
       "location": "Zaal 1"
     },
     {
@@ -81,7 +81,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 2",
-      "speakers": "",
+      "speakers": "Sponsorslot -> n.o.t.k.",
       "location": "Zaal 2"
     },
     {
@@ -90,7 +90,7 @@
       "end_time": "16:00",
       "type": "switch",
       "tag": [""],
-      "description": "Wissel",
+      "description": "Zaal wissel",
       "speakers": "",
       "location": ""
     },
@@ -101,7 +101,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 3",
-      "speakers": "",
+      "speakers": "Roeland van den Bosch",
       "location": "Zaal 1"
     },
     {
@@ -111,7 +111,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 4",
-      "speakers": "",
+      "speakers": "Matthijs Kamstra",
       "location": "Zaal 2"
     },
     {
@@ -120,7 +120,7 @@
       "end_time": "16:30",
       "type": "switch",
       "tag": [""],
-      "description": "Wissel",
+      "description": "Zaal wissel",
       "speakers": "",
       "location": ""
     },
@@ -131,7 +131,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 5",
-      "speakers": "",
+      "speakers": "Maurice Diekhorst & Negin Nafassi",
       "location": "Zaal 1"
     },
     {
@@ -141,7 +141,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 6",
-      "speakers": "",
+      "speakers": "Jan-Paul Plaisier",
       "location": "Zaal 2"
     },
     {
@@ -150,7 +150,7 @@
       "end_time": "17:00",
       "type": "switch",
       "tag": [""],
-      "description": "Wissel",
+      "description": "Zaal wissel",
       "speakers": "",
       "location": ""
     },
@@ -161,7 +161,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 7",
-      "speakers": "",
+      "speakers": "Olivier van den Eertwegh",
       "location": "Zaal 1"
     },
     {
@@ -171,7 +171,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 8",
-      "speakers": "",
+      "speakers": "Erwin Gerlich & Tristan Remkes",
       "location": "Zaal 2"
     },
     {
@@ -180,7 +180,7 @@
       "end_time": "17:30",
       "type": "switch",
       "tag": [""],
-      "description": "Wissel",
+      "description": "Zaal wissel",
       "speakers": "",
       "location": ""
     },
@@ -191,7 +191,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 9",
-      "speakers": "",
+      "speakers": "Edwin ten Haaf",
       "location": "Zaal 1"
     },
     {
@@ -201,7 +201,7 @@
       "type": "",
       "tag": [""],
       "description": "Sessie 10",
-      "speakers": "",
+      "speakers": "Jeroen Buren",
       "location": "Zaal 2"
     },
     {
@@ -210,7 +210,7 @@
       "end_time": "17:55",
       "type": "switch",
       "tag": [""],
-      "description": "Wissel",
+      "description": "Zaal wissel",
       "speakers": "",
       "location": ""
     },
@@ -220,7 +220,7 @@
       "end_time": "18:00",
       "type": "",
       "tag": [""],
-      "description": "Afsluiten",
+      "description": "Plenaire afsluiting",
       "speakers": "",
       "location": "Zaal 1"
     },
@@ -230,7 +230,7 @@
       "end_time": "18:15",
       "type": "switch",
       "tag": [""],
-      "description": "Wissel",
+      "description": "Zaal wissel",
       "speakers": "",
       "location": ""
     },
@@ -249,9 +249,9 @@
       "start_time": "19:15",
       "end_time": "21:15",
       "type": "",
-      "tag": [""],
-      "description": "Diner",
-      "speakers": "",
+      "tag": ["diner", "food"],
+      "description": "Famous Braaimaster",
+      "speakers": "Eten van de Zuid-Afrikaanse braai",
       "location": ""
     },
     {
@@ -260,7 +260,69 @@
       "end_time": "01:00",
       "type": "",
       "tag": [""],
-      "description": "Feestavond",
+      "description": "Feest avond + Feest DJ",
+      "speakers": "",
+      "location": ""
+    }
+  ],
+  "day": [
+    {
+      "_id": "",
+      "start_time": "01:00",
+      "end_time": "08:00",
+      "type": "",
+      "tag": [""],
+      "description": "Overnachting @ Courtyard by Marriott hotel",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "08:00",
+      "end_time": "09:00",
+      "type": "",
+      "tag": [""],
+      "description": "Bootcamp",
+      "speakers": "Jan-Paul Plaisier",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "type": "",
+      "tag": [""],
+      "description": "Ontbijt",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "10:30",
+      "end_time": "12:30",
+      "type": "",
+      "tag": [""],
+      "description": "Teambuilding",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "12:30",
+      "end_time": "13:30",
+      "type": "",
+      "tag": [""],
+      "description": "Lunch",
+      "speakers": "",
+      "location": ""
+    },
+    {
+      "_id": "",
+      "start_time": "13:30",
+      "end_time": "-",
+      "type": "",
+      "tag": [""],
+      "description": "Einde",
       "speakers": "",
       "location": ""
     }
@@ -268,8 +330,54 @@
   "sessions": [
     {
       "_id": "sessie_01",
-      "description": "Sessie 1",
-      "speakers": "UNKNOWN"
+      "speakers": "Mark Bonefaas & Gerjon Kunst",
+      "description": "Cloud Management Platform"
+    },
+    {
+      "_id": "sessie_02",
+      "description": "Sponsorslot -> n.o.t.k.",
+      "speakers": "N.O.T.K."
+    },
+    {
+      "_id": "sessie_03",
+      "speakers": "Roeland van den Bosch",
+      "description": "Automatiseren met Azure Function Apps"
+    },
+    {
+      "_id": "sessie_04",
+      "speakers": "Matthijs Kamstra",
+      "description": "RawGenius, het had zo mooi kunnen zijn! Fails, wins en toekomstige ontwikkelingen"
+    },
+
+    {
+      "_id": "sessie_05",
+      "speakers": "Maurice Diekhorst & Negin Nafassi",
+      "description": "Modern Software Engineering in The Legacy World!"
+    },
+    {
+      "_id": "sessie_06",
+      "speakers": "Jan-Paul Plaisier",
+      "description": "The way to my ultramarathon challenge"
+    },
+    {
+      "_id": "sessie_07",
+      "speakers": "Olivier van den Eertwegh",
+      "description": "Van Data tot Inzichten: Een Interactieve Gids voor Data Science in Jupyter Notebook"
+    },
+    {
+      "_id": "sessie_08",
+      "speakers": "Erwin Gerlich & Tristan Remkes",
+      "description": "Workspace 365"
+    },
+    {
+      "_id": "sessie_09",
+      "speakers": "Edwin ten Haaf",
+      "description": "CLAAS - Client as a service  "
+    },
+    {
+      "_id": "sessie_10",
+      "speakers": "Jeroen Buren",
+      "description": "How to build your own cloud"
     }
   ]
 }
