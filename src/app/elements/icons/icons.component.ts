@@ -100,6 +100,10 @@ export class IconsComponent implements OnInit {
 			case '':
 			case '?': this.icon = 'fa-question'; break;
 
+			case 'tel': this.icon = 'fa-phone'; break;
+			case 'map': this.icon = 'fa-map-marker'; break;
+			case 'link': this.icon = 'fa-external-link'; break;
+
 			// dark light
 			case 'dark': this.icon = 'fa-moon-o'; break;
 			case 'light': this.icon = 'fa-sun-o'; break;

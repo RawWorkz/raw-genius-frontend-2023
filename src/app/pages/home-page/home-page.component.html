@@ -190,9 +190,23 @@
 <app-anchor id="contact"></app-anchor>
 
 <app-anchor id="location"></app-anchor>
+<app-anchor id="location-event"></app-anchor>
 <section class="container container-style mb-5">
-	<app-title title="📍 Location/Place-2-b" subtitle="there's no place like home"></app-title>
+	<app-title title="📍 Location/Event" subtitle="play hard"></app-title>
+	<app-location-event></app-location-event>
 </section>
+
+<app-anchor id="location-sleep"></app-anchor>
+<section class="container container-style mb-5">
+	<app-title title="📍 Location/Sleep" subtitle="sleep hard"></app-title>
+	<app-location-sleep></app-location-sleep>
+</section>
+
+
+
+
+
+
 
 <section debug>
 	<section class="container container-style mb-5" *ngIf="data && data.eventInfo">
