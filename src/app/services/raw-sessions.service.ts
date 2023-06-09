@@ -18,6 +18,8 @@ export class RawSessionsService {
 		if (url != null) {
 			this.url = url;
 		}
-		return this.http.get<IITimeline>(this.url);
+		var today = new Date();
+		today.toISOString().substring(0, 10);
+		return this.http.get<IITimeline>(this.url + '?d=' + today.toISOString().substring(0, 10));
 	}
 }
