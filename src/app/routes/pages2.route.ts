@@ -15,7 +15,7 @@ import { ProgramPageComponent } from "../pages/program-page/program-page.compone
 
 export const pages2Routes: Routes = [
 	// { path: "", title: "Home", component: HomePageComponent },
-	// { path: "home", title: "Home", pathMatch: "full", redirectTo: "" },
+	{ path: "home", title: "Home", pathMatch: "full", redirectTo: "" },
 	// { path: "emoji", title: "Emojis", component: EmojiPageComponent },
 	{ path: "program", title: "Program", component: ProgramPageComponent },
 	{ path: "locatie", title: "Locatie", component: LocationPageComponent },
