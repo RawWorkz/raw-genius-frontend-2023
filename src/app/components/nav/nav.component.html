@@ -21,14 +21,26 @@
 						</a>
 					</li> -->
 
-					<li class="nav-item" *ngFor="let anchor of anchorRoutes">
-						<a class="nav-link" (click)="onAnchorClickHandler($event, anchor)" href="#"
-							routerLinkActive="active" ariaCurrentWhenActive="page">
-							<!-- <app-icons icon="{{anchor.title}}"></app-icons> -->
-							{{anchor.title}}
-							<app-icons icon="arrow-down"></app-icons>
-						</a>
-					</li>
+					<ng-container *ngIf="isRoot">
+						<li class="nav-item" *ngFor="let anchor of anchorRoutes">
+							<a class="nav-link" (click)="onAnchorClickHandler($event, anchor)" href="#"
+								routerLinkActive="active" ariaCurrentWhenActive="page">
+								<!-- <app-icons icon="{{anchor.title}}"></app-icons> -->
+								{{anchor.title}}
+								<app-icons icon="arrow-down"></app-icons>
+							</a>
+						</li>
+					</ng-container>
+					<ng-container *ngIf="!isRoot">
+						<li class="nav-item" *ngFor="let page of pages2Routes">
+							<a class="nav-link" [routerLink]="page.path" routerLinkActive="active"
+								ariaCurrentWhenActive="page">
+								<!-- <app-icons icon="{{anchor.title}}"></app-icons> -->
+								{{page.title}}
+								<!-- <app-icons icon="arrow-down"></app-icons> -->
+							</a>
+						</li>
+					</ng-container>
 
 					<ng-container *ngIf="isRoot">
 						<span class="nav-link">❤️</span>
@@ -46,6 +58,10 @@
 						<ul class="dropdown-menu dropdown-menu-dark">
 							<li><a class="dropdown-item" href="/styleguide">Styleguide</a></li>
 							<li><a class="dropdown-item" href="/oeps">Oeps</a></li>
+							<li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#offcanvasExample"
+									role="button" aria-controls="offcanvasExample">
+									Toggle Offcanvas
+								</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>

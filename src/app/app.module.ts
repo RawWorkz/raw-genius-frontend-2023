@@ -67,6 +67,12 @@ import { ScheduleSessionInfo2Component } from './elements/schedule-session-info2
 import { LocationEventComponent } from './components/location-event/location-event.component';
 import { LocationSleepComponent } from './components/location-sleep/location-sleep.component';
 import { ScheduleTwoComponent } from './components/schedule-two/schedule-two.component';
+import { SpringboardComponent } from './components/springboard/springboard.component';
+import { ETicketPageComponent } from './pages/eticket-page/eticket-page.component';
+import { ProgramPageComponent } from './pages/program-page/program-page.component';
+import { PlattegrondPageComponent } from './pages/plattegrond-page/plattegrond-page.component';
+import { LocationPageComponent } from './pages/location-page/location-page.component';
+import { OffcanvasComponent } from './components/offcanvas/offcanvas.component';
 
 const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featureFlagsService.loadConfig();
 
@@ -120,14 +126,20 @@ const featureFactory = (featureFlagsService: FeatureFlagsService) => () => featu
 		VideoDefaultComponent,
 		VideoVimeoComponent,
 		VideoYoutubeComponent,
-  EmojicanvasComponent,
-  EmojiPageComponent,
-  CtaAlertComponent,
-  CtaSpeakersComponent,
-  ScheduleSessionInfo2Component,
-  LocationEventComponent,
-  LocationSleepComponent,
-  ScheduleTwoComponent,
+		EmojicanvasComponent,
+		EmojiPageComponent,
+		CtaAlertComponent,
+		CtaSpeakersComponent,
+		ScheduleSessionInfo2Component,
+		LocationEventComponent,
+		LocationSleepComponent,
+		ScheduleTwoComponent,
+		SpringboardComponent,
+		ETicketPageComponent,
+		ProgramPageComponent,
+		PlattegrondPageComponent,
+		LocationPageComponent,
+  OffcanvasComponent,
 	],
 	imports: [
 		BrowserModule,

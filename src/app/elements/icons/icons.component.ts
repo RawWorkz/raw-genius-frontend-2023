@@ -51,34 +51,9 @@ export class IconsComponent implements OnInit {
 		// use as default
 		if (this.icon == null) this.icon = '?';
 
-		if (this.icon.indexOf('---') != -1) this.icon = 'x';
-
-		// convert glyphicon to ficons tags
-		if (this.icon.indexOf('glyphicon-') != -1) {
-			this.icon = this.icon.replace('glyphicon glyphicon-', 'fa-').trim();
-			this.icon = this.icon.replace('fa-lg', '').trim(); // remove sizing class
-			this.icon = this.icon.replace('floating-icon', '').trim(); // weird class... need to investigate
-			// see `this.size` to fix this
-		};
-
-		// convert 'wrong' ficons names to correct
-		switch (this.icon.toLowerCase()) {
-			case "fa-warning-sign": this.icon = "fa-warning"; break;
-			case "fa-sort-by-attributes": this.icon = "fa-sort-amount-desc"; break;
-			case "fa-sort-by-attributes-alt": this.icon = "fa-sort-amount-asc"; break;
-			case "fa-transfer": this.icon = "fa-exchange"; break;
-			case "fa-check": this.icon = "fa-check-square-o"; break;
-			case "fa-unchecked": this.icon = "fa-square-o"; break;
-			case "fa-check": this.icon = "fa-check-circle-o"; break;
-			case "fa-unchecked": this.icon = "fa-circle-o"; break;
-			case "fa-info-sign": this.icon = "fa-info-circle"; break;
-			case "fa-ok": this.icon = "fa-check"; break;
-			case "fa-warning-sign": this.icon = "fa-warning"; break;
-			case "fa-pushpin": this.icon = "fa-thumb-tack"; break;
-		}
-
 		// when using `fa-xxx` we assume you know what you are talking about
 		if (this.icon.indexOf('fa-') != -1) return;
+
 
 		switch (this.icon.toLowerCase()) {
 			case 'up': this.icon = 'fa-chevron-up'; break;
@@ -91,6 +66,17 @@ export class IconsComponent implements OnInit {
 			case 'youtube': this.icon = 'fa-youtube-square'; break;
 			case 'twitter': this.icon = 'fa-twitter-square'; break;
 			case 'github': this.icon = 'fa-github'; break;
+
+			// rawGenius
+			case 'arrow-right': this.icon = 'fa-arrow-right'; break;
+
+			case "program":
+			case 'programma': this.icon = 'fa-calendar-o'; break;
+			case 'plattegrond': this.icon = 'fa-map-o'; break;
+			case 'locatie': this.icon = 'fa-map-marker'; break;
+			case 'e-ticket': this.icon = 'fa-ticket'; break;
+			case 'emojis': this.icon = 'fa-smile-o'; break;
+
 
 			// defaults
 			case 'x': this.icon = 'fa-remove'; break;

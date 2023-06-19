@@ -8,6 +8,7 @@ import { environment } from 'src/environments/environment';
 import { AnchorRoutes, anchorRoutes } from "../../routes/anchor.route";
 import { defaultRoutes } from "../../routes/default.route";
 import { pagesRoutes } from "../../routes/pages.route";
+import { pages2Routes } from "../../routes/pages2.route";
 import { testRoutes } from "../../routes/test.route";
 
 @Component({
@@ -19,6 +20,7 @@ export class NavComponent implements OnInit {
 
 	defaultRoutes: Routes = defaultRoutes;
 	pagesRoutes: Routes = pagesRoutes;
+	pages2Routes: Routes = pages2Routes;
 	fullscreenRoutes: Routes = fullscreenRoutes;
 	testRoutes: Routes = testRoutes;
 	anchorRoutes: AnchorRoutes[] = anchorRoutes;
