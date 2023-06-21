@@ -7,7 +7,7 @@ export const anchorRoutes: AnchorRoutes[] = [
 	{ id: "about", title: "About" },
 	// { id: "register", title: "Register" },
 	// { id: "speakers", title: "Speakers" },
-	{ id: "schedule", title: "Schedule" },
+	{ id: "programma", title: "Programma" },
 	// { id: "people", title: "People" },
 	// { id: "contact", title: "Contact" },
 	// { id: "cta", title: "CTA" },
