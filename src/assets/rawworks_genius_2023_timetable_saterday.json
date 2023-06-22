@@ -30,7 +30,7 @@
       "end_time": "10:00",
       "type": "ontbijt",
       "tag": ["food"],
-      "description": "Ontbijt",
+      "description": "Ontbijt (in het hotel)",
       "speakers": "",
       "location": ""
     },
@@ -50,7 +50,7 @@
       "end_time": "13:30",
       "type": "lunch",
       "tag": ["food"],
-      "description": "Lunch",
+      "description": "Lunch (bij Clause)",
       "speakers": "",
       "location": ""
     },
